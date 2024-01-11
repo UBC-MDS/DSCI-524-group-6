@@ -126,8 +126,9 @@ def apply_filter(img_path: str, method: str, degree: float = 0.5):
 
     Returns
     -------
-    image
-        New image after the filter being applied. 
+    None
+        The filtered image is saved as a .png file at the same location as the input with "_filter_img" appended
+        to the original filename.  
 
     Raises
     ------
