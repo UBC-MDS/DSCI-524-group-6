@@ -36,7 +36,7 @@ $ pip install pythoshop
 
 ## Usage
 
-- TODO
+- Usage instructions will be added in upcoming milestones.
 
 ## Contributing
 
