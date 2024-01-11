@@ -1,17 +1,18 @@
 # Contributing
 
 Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given.
+helps, and credit will always be given. 
 
 ## Types of Contributions
 
 ### Report Bugs
 
-If you are reporting a bug, please include:
+If you are reporting a bug, write an issue and please include:
 
 * Your operating system name and version.
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
+* Label the issue with "bug" or "help wanted".
 
 ### Fix Bugs
 
@@ -37,6 +38,7 @@ If you are proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
+* Label your issue with "enhancement" or "help wanted"
 
 ## Get Started!
 
@@ -66,6 +68,19 @@ Before you submit a pull request, check that it meets these guidelines:
 1. The pull request should include additional tests if appropriate.
 2. If the pull request adds functionality, the docs should be updated.
 3. The pull request should work for all currently supported operating systems and versions of Python.
+
+## Merge Guidelines
+* Do not push anything directly to the MAIN branch without first opening a pull request
+* Do not merge with main before all core authors have reviewed and approved the request
+
+## Branching Guidelines
+
+Open each branch from an issue.
+
+1. Open an issue with the branch name and description
+2. Click 'Create a branch'
+3. Open a pull request before merging with MAIN
+3. Close every branch after merging with MAIN
 
 ## Code of Conduct
 
