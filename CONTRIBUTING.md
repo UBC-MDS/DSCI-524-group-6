@@ -70,7 +70,7 @@ Before you submit a pull request, check that it meets these guidelines:
 3. The pull request should work for all currently supported operating systems and versions of Python.
 
 ## Merge Guidelines
-* Do not push anything directly to the MAIN brancg without first opening a pull request
+* Do not push anything directly to the MAIN branch without first opening a pull request
 * Do not merge with main before all core authors have reviewd and approved the request
 
 ## Branching Guidelines
