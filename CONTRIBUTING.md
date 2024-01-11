@@ -71,7 +71,7 @@ Before you submit a pull request, check that it meets these guidelines:
 
 ## Merge Guidelines
 * Do not push anything directly to the MAIN branch without first opening a pull request
-* Do not merge with main before all core authors have reviewd and approved the request
+* Do not merge with main before all core authors have reviewed and approved the request
 
 ## Branching Guidelines
 
