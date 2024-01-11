@@ -1,4 +1,4 @@
-def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 'crop') -> str:
+def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 'crop'):
     """
     Adjust Aspect Ratio Function
 
@@ -6,6 +6,7 @@ def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 
     based on the specified method.
 
     Parameters:
+    -------
     - image_path (str): The path to the input image.
     - height (int): The desired height for the image.
     - width (int): The desired width for the image.
@@ -14,7 +15,14 @@ def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 
       'resize' for resizing/scaling to the specified dimensions.
 
     Returns:
-    - np.ndarray: The modified image as a NumPy array with new aspect ratio.
+    -------
+    None
+        The adjusted image is saved as a .png file at the same location as the input with "_adj_img" appended
+        to the original filename.
+    Raises
+    ------
+    IOError
+        If the image file cannot be opened or saved.
 
     Example:
     >>> input_path = "path/to/input_image.jpg"
