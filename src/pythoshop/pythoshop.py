@@ -109,3 +109,44 @@ def adjust_brightness(image_path, brightness_factor):
     # Implementation of brightness adjustment goes here...
     pass
 
+def apply_filter(img_path: str, method: str, degree: float = 0.5):
+    """
+    Apply filter from a chosen range of colours. 
+
+    This function allows a filter to be applied on the image which can be retrieved from 
+
+    Parameters
+    ----------
+    image_path : str
+        The file path to the image that needs brightness adjustment. The image can be in .jpg or .png format.
+    method : str
+        Choose from a list of available filters to be applied onto the image. 
+    degree : int or float
+        Degree to apply the filter on the image. Minimum value is 0 and maximum value is 1. 
+
+    Returns
+    -------
+    None
+        The filtered image is saved as a .png file at the same location as the input with "_filter_img" appended
+        to the original filename.  
+
+    Raises
+    ------
+    IOError
+        If the image file cannot be opened or saved.
+
+    ValueError
+        If incorrect type of variables are used in parameters. 
+
+    Examples
+    --------
+    To apply 'sephia' filter on 'photo.jpg' by 30%:
+    >>> apply_filter('photo.jpg', 'sephia', 0.3)
+
+    To apply 'aquamarine' filter on 'photo.jpg' by 70%:
+    >>> apply_filter('photo.jpg', 'aquamarine', 0.7)
+    """
+    # Implementation of apply filter function goes here...
+    pass
+
+
