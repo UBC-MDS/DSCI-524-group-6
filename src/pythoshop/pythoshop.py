@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt 
+
 def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 'crop'):
     """
     Adjust Aspect Ratio Function
@@ -28,7 +30,17 @@ def adjust_aspect_ratio(image_path: str, height: int, width: int, method: str = 
     >>> input_path = "path/to/input_image.jpg"
     >>> adjust_aspect_ratio(input_path, height=200, width=200, method='crop')
     """
-    pass
+    img = plt.imread(image_path)
+    plt.imshow(img)
+
+    if method == "crop":
+        print("Current dimensions of Image:", img.shape[0], "x", img.shape[1])
+        cropped_img = img[:height, :width, :]
+        print("Cropped Dimensions:", cropped_img.shape[0], "x", cropped_img.shape[1])
+        plt.imshow(cropped_img)
+        plt.imsave(f"{image_path}_adj_img.png", cropped_img, origin='lower')
+        plt.show()
+
     # Return the modified image as a NumPy array
 
 def transform_image(image_path: str, method: str = 'rotate', direction: str = 'clockwise'):
