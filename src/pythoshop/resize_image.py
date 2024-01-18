@@ -26,6 +26,7 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
 
     Raises:
     - IOError: If the image file cannot be opened or saved.
+    - FileNotFoundError: If the specified file does not exist.
 
     Example:
     >>> input_path = "path/to/input_image.jpg"
