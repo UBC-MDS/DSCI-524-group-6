@@ -49,6 +49,8 @@ def adjust_brightness(image_path, brightness_factor):
         new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
         mpimg.imsave(new_image_path, adjusted_img)
 
+    except FileNotFoundError as fnf_error:
+        raise FileNotFoundError(fnf_error)
     except Exception as e:
         raise IOError(f"Error processing the image: {e}")
 
