@@ -55,6 +55,8 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
         x_offset = (width - img.shape[1]) // 2
         y_offset = (height - img.shape[0]) // 2
         new_img[y_offset:y_offset+img.shape[0], x_offset:x_offset+img.shape[1], :] = img
+        # Normalize the image values to the range [0, 1]
+        new_img = new_img / 255.0
         img = new_img
     else:
         raise ValueError("Invalid resize method. Supported methods: 'maintain_aspect_ratio', 'crop', 'add_borders'.")

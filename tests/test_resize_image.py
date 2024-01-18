@@ -42,6 +42,20 @@ class TestResizeImageFunction(unittest.TestCase):
         resized_img = plt.imread(os.path.join(self.temp_dir, 'test_image_maintain_aspect_ratio_res_img.png'))
         self.assertEqual(resized_img.shape[0], 200)
         self.assertGreaterEqual(resized_img.shape[1], 200)  # Width can be greater due to maintaining aspect ratio
+    
+    def test_resize_add_borders(self):
+        # Create a test image with known dimensions
+        test_image_path = os.path.join(self.temp_dir, 'test_image_add_borders.jpg')
+        img = np.ones((1000, 1000, 3), dtype=np.uint8) * 255  # White image
+        plt.imsave(test_image_path, img)
+
+        # Resize the image using the 'add_borders' method
+        resize_image(test_image_path, height=200, width=200, method='add_borders', verbose=False)
+
+        # Check if the resized image has the correct dimensions
+        resized_img = plt.imread(os.path.join(self.temp_dir, 'test_image_add_borders_res_img.png'))
+        self.assertEqual(resized_img.shape[0], 200)
+        self.assertEqual(resized_img.shape[1], 200)
 
 
 if __name__ == '__main__':
