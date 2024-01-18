@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
+import os
 
 def apply_filter(image_path, method, degree=0.7):
       """
@@ -41,7 +42,10 @@ def apply_filter(image_path, method, degree=0.7):
       >>> apply_filter('photo.jpg', 'aquamarine', 0.7)
       """
        
-      img = mpimg.imread(image_path)
+      try:
+            img = mpimg.imread(image_path)
+      except:
+            raise FileNotFoundError("Your image is not found in the specified directory.")
 
       new_image = img.copy()
 
@@ -53,8 +57,8 @@ def apply_filter(image_path, method, degree=0.7):
             new_image[::, ::, 1] = (img[::, ::, 0] * 0.349 * degree) + (img[::, ::, 1] * 0.686) + (img[::, ::, 2] * 0.168)
             new_image[::, ::, 2] = (img[::, ::, 0] * 0.272 * degree) + (img[::, ::, 1] * 0.534) + (img[::, ::, 2] * 0.131)
       elif method == "blue":
-            new_image[:, :, 0] = new_image[:, :, 0] * (1-degree)
-            new_image[:, :, 1] = new_image[:, :, 1] * (1-degree)
+            new_image[:, :, 0] = img[:, :, 0] * (1-degree)
+            new_image[:, :, 1] = img[:, :, 1] * (1-degree)
             new_image[:, :, 2] = (img[:, :, 2] * (1 * degree if degree is not None else 0))
       elif method == "gray":
             new_image[:, :, 0] = (img[::, ::, 0] * (1-degree)) 
@@ -62,12 +66,12 @@ def apply_filter(image_path, method, degree=0.7):
             new_image[:, :, 2] = (img[::, ::, 2] * (1-degree))
       elif method == "red":
             new_image[:, :, 0] = (img[:, :, 0] * (1 * degree if degree is not None else 0))
-            new_image[:, :, 1] = new_image[:, :, 1] * (1-degree)
-            new_image[:, :, 2] = new_image[:, :, 2] * (1-degree)
+            new_image[:, :, 1] = img[:, :, 1] * (1-degree)
+            new_image[:, :, 2] = img[:, :, 2] * (1-degree)
       elif method == "green":
-            new_image[:, :, 0] = new_image[:, :, 0] * (1-degree)
+            new_image[:, :, 0] = img[:, :, 0] * (1-degree)
             new_image[:, :, 1] = (img[:, :, 1] * (1 * degree if degree is not None else 0))
-            new_image[:, :, 2] = new_image[:, :, 2] * (1-degree)
+            new_image[:, :, 2] = img[:, :, 2] * (1-degree)
       else:
             raise ValueError("Method is not an accepted type.")
 
@@ -76,4 +80,3 @@ def apply_filter(image_path, method, degree=0.7):
       plt.show()
 
       mpimg.imsave(f"{image_path}_filter_img.png", new_image)
-      
