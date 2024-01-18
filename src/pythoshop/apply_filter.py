@@ -27,7 +27,7 @@ def apply_filter(image_path, method, degree=0.7):
 
       Raises
       ------
-      IOError
+      FileNotFoundError
             If the image file cannot be opened or saved.
 
       ValueError
