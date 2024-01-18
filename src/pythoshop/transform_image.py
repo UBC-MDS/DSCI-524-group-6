@@ -39,12 +39,13 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     >>> input_path = 'path/to/input_image.jpg'
     >>> adjust_aspect_ratio(input_path, method = 'flip', direction = 'horizontal')
     """
-    img = mpimg.imread(image_path)
+    path = os.getcwd() + image_path
+    img = mpimg.imread(path)
 
     new_image = img.copy()
 
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"The file '{image_path}' does not exist.")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"The file '{path}' does not exist.")
     
     if method.lower() == 'rotate':
         if direction == 'clockwise':
@@ -67,7 +68,7 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     plt.imshow(new_image)
     plt.show()
 
-    output_path = image_path.rsplit('.', 1)[0] + "_trns_img.png"
+    output_path = path.rsplit('.', 1)[0] + "_trns_img.png"
     mpimg.imsave(output_path, new_image, format = 'png')
 
     print(f"Transformed image saved as {output_path}")
