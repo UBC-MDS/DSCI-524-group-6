@@ -56,6 +56,12 @@ class TestResizeImageFunction(unittest.TestCase):
         resized_img = plt.imread(os.path.join(self.temp_dir, 'test_image_add_borders_res_img.png'))
         self.assertEqual(resized_img.shape[0], 200)
         self.assertEqual(resized_img.shape[1], 200)
+        
+    def test_resize_with_nonexistent_file(self):
+        # Test resizing an image that does not exist
+        nonexistent_image_path = os.path.join(self.temp_dir, 'nonexistent_image.jpg')
+        with self.assertRaises(FileNotFoundError):
+            resize_image(nonexistent_image_path, height=200, width=200, method='crop', verbose=False)
 
 
 if __name__ == '__main__':
