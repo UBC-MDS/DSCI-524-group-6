@@ -55,7 +55,8 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
         raise ValueError("Invalid resize method. Supported methods: 'maintain_aspect_ratio', 'crop', 'add_borders'.")
 
     plt.axis('off')
-    plt.imsave(f'{image_path[:-4]}_res_img.png', img, format='png')  # Save the resized image with higher resolution and tighter bounding box
+    save_img = img[:, :, :3] if img.shape[2] == 4 else img  # If the image has an alpha channel, discard it
+    plt.imsave(f'{image_path[:-4]}_res_img.png', save_img, format='png')  # Save the resized image with higher resolution and tighter bounding box
 
     if verbose:
         print(f"Resized image saved as: {image_path[:-4]}_res_img.png")
@@ -64,3 +65,4 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
 
     plt.imshow(img)  # Display the resized image
     plt.show()
+
