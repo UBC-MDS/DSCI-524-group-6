@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
+import os
 
 def transform_image(image_path: str, method: str = 'rotate', direction: str = 'clockwise'):
     """
@@ -27,7 +28,7 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
         
     Raises
     ------
-    IOError
+    FileNotFoundError
         If the image file cannot be opened or saved.
     
     ValueError
@@ -42,7 +43,8 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
 
     new_image = img.copy()
 
-    direction_options = {'flip': ['vertical', 'horizontal'], 'rotate': ['clockwise', 'counterclockwise']}
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"The file '{image_path}' does not exist.")
     
     if method.lower() == 'rotate':
         if direction == 'clockwise':
@@ -66,6 +68,6 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     plt.show()
 
     output_path = image_path.rsplit('.', 1)[0] + "_trns_img.png"
-    mpimg.imsave(output_path, new_image)
+    mpimg.imsave(output_path, new_image, format = 'png')
 
     print(f"Transformed image saved as {output_path}")
