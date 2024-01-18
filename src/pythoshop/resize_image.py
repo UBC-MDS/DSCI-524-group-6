@@ -37,29 +37,30 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
     if method == 'maintain_aspect_ratio':
         aspect_ratio = img.shape[1] / img.shape[0]
         new_width = int(height * aspect_ratio)
-        new_img = plt.imshow(img, extent=(0, new_width, 0, height), aspect='auto')
+        img = np.resize(img, (height, new_width, img.shape[2]))
     elif method == 'crop':
-        new_img = plt.imshow(img[:height, :width], extent=(0, width, 0, height), aspect='auto')
+        img = img[:height, :width, :]
     elif method == 'add_borders':
         aspect_ratio = img.shape[1] / img.shape[0]
         new_width = int(height * aspect_ratio)
-        img = plt.resize(img, (new_width, height))
+        img = np.resize(img, (height, new_width, img.shape[2]))
 
         # Initialize image with white background
         new_img = np.ones((height, width, img.shape[2])) * 255
         x_offset = (width - img.shape[1]) // 2
         y_offset = (height - img.shape[0]) // 2
         new_img[y_offset:y_offset+img.shape[0], x_offset:x_offset+img.shape[1], :] = img
-        new_img = plt.imshow(new_img, extent=(0, width, 0, height), aspect='auto')
+        img = new_img
     else:
         raise ValueError("Invalid resize method. Supported methods: 'maintain_aspect_ratio', 'crop', 'add_borders'.")
 
     plt.axis('off')
-    plt.savefig(f'{image_path[:-4]}_res_img.png')  # Save the resized image as a PNG file
+    plt.imsave(f'{image_path[:-4]}_res_img.png', img, format='png')  # Save the resized image with higher resolution and tighter bounding box
 
     if verbose:
         print(f"Resized image saved as: {image_path[:-4]}_res_img.png")
         resized_img = plt.imread(f"{image_path[:-4]}_res_img.png")
         print("Resize Image Dimensions: ", resized_img.shape)
 
-    plt.show()  # Display the resized image
+    plt.imshow(img)  # Display the resized image
+    plt.show()
