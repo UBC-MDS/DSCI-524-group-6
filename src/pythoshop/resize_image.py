@@ -20,6 +20,8 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
 
     Returns:
     - None
+    The resized image is saved as a .png file at the same location as the input with "_res_img.png" appended
+    to the original filename.
 
     Raises:
     - IOError: If the image file cannot be opened or saved.
