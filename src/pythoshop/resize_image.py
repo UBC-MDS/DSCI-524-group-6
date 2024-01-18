@@ -59,5 +59,7 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
 
     if verbose:
         print(f"Resized image saved as: {image_path[:-4]}_res_img.png")
+        resized_img = plt.imread(f"{image_path[:-4]}_res_img.png")
+        print("Resize Image Dimensions: ", resized_img.shape)
 
     plt.show()  # Display the resized image
