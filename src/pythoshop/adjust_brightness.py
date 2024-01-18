@@ -46,7 +46,7 @@ def adjust_brightness(image_path, brightness_factor):
             adjusted_img = np.clip(img.astype(np.float32) * (1 + brightness_factor), 0, 1)
 
         # Save the adjusted image
-        new_image_path = os.path.splitext(image_path)[0] + "_brightened.png"
+        new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
         mpimg.imsave(new_image_path, adjusted_img)
 
     except Exception as e:
