@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 def resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):
     """
@@ -30,6 +31,9 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
     >>> input_path = "path/to/input_image.jpg"
     >>> resize_image(input_path, height=200, width=200, method='crop')
     """
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"The file '{image_path}' does not exist.")
+    
     img = plt.imread(image_path)
     if verbose:
         print(f"Initial image dimensions: {img.shape}")
