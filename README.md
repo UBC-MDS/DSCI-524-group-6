@@ -7,8 +7,8 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 - **adjust_brightness(img_path, brightness_factor):**
   Adjusts the brightness of an image specified by the given image path. The `brightness_factor` parameter allows fine-tuning the brightness level.
 
-- **adjust_aspect_ratio(img_path, height, width, method):**
-  Modifies the aspect ratio of an image specified by the given image path. The function supports two methods: "crop" and "resize," providing flexibility in achieving the desired dimensions.
+- **resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):**
+  This function takes an image path and adjusts the image to have the inputted dimensions using the selected method.
 
 - **transform_image(img_path, method, direction):**
   Transforms an image based on the specified method and direction. Options include "rotate" or "flip", allowing users to orient images as needed.
@@ -31,13 +31,31 @@ Pythoshop complements existing image processing libraries in the Python ecosyste
 ## Installation
 
 ```bash
-# you can't use this for now since the package hasn't be published yet.
+# you can't use this for now since the package hasn't been published yet.
 $ pip install pythoshop
 ```
 
 ## Usage
 
-Navigate to the folder that you want to download the pythoshop package.
+First, you need to make sure you have installed conda and poetry.
+
+**To install Anaconda:**
+
+1. Download the Anaconda Installer:
+- Visit the [Anaconda Download page](https://www.anaconda.com/download)
+- Choose the installer for your operating system (Windows, macOS, or Linux).
+- Select the version for Python 3.x.
+2. Run the Installer:
+- Windows: Open the downloaded .exe file and follow the instructions. It's recommended to check the option to "Add Anaconda to my PATH environment variable" for easy use in the command prompt, but be aware this can interfere with other software.
+- macOS or Linux: Open Terminal, navigate to the directory containing the downloaded script, and run it with bash Anaconda3-xxxxxx.sh, following the on-screen instructions.
+3. Verify Installation:
+Open your command line interface (CLI) and type `conda list`. If Anaconda is installed properly, you should see a list of installed packages.
+
+**To install `poetry`, follow the instructions below:**
+
+we recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support.
+
+Now navigate to the folder that you want to download the pythoshop package.
 ```bash
 # 1. clone the repo
 $ git clone git@github.com:UBC-MDS/Pythoshop.git
