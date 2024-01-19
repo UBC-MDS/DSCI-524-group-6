@@ -1,0 +1,49 @@
+:py:mod:`pythoshop.apply_filter`
+================================
+
+.. py:module:: pythoshop.apply_filter
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pythoshop.apply_filter.apply_filter
+
+
+
+.. py:function:: apply_filter(image_path, method, degree=0.7)
+
+   Apply filter from a chosen range of colours.
+
+   This function allows a filter to be applied on the image which can be retrieved from
+
+   :param image_path: The file path to the image that needs brightness adjustment. The image can be in .jpg or .png format.
+   :type image_path: str
+   :param method: Choose from a list of available filters to be applied onto the image.
+   :type method: str
+   :param degree: Degree to apply the filter on the image. Minimum value is 0 and maximum value is 1.
+                  Default is set as 0.7.
+   :type degree: int or float
+
+   :returns: The filtered image is saved as a .png file at the same location as the input with "_filter_img" appended
+             to the original filename.
+   :rtype: None
+
+   :raises FileNotFoundError: If the image file cannot be opened or saved.
+   :raises ValueError: If incorrect type of variables are used in parameters.
+
+   .. rubric:: Examples
+
+   To apply 'sephia' filter on 'photo.jpg' by 30%:
+   >>> apply_filter('photo.jpg', 'sephia', 0.3)
+
+   To apply 'aquamarine' filter on 'photo.jpg' by 70%:
+   >>> apply_filter('photo.jpg', 'aquamarine', 0.7)
+
+
