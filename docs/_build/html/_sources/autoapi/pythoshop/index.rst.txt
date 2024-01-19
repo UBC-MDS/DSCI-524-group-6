@@ -1,0 +1,24 @@
+:py:mod:`pythoshop`
+===================
+
+.. py:module:: pythoshop
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   adjust_brightness/index.rst
+   apply_filter/index.rst
+   pythoshop/index.rst
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+
+   
+
