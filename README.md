@@ -31,12 +31,29 @@ Pythoshop complements existing image processing libraries in the Python ecosyste
 ## Installation
 
 ```bash
+# you can't use this for now since the package hasn't be published yet.
 $ pip install pythoshop
 ```
 
 ## Usage
 
-- Usage instructions will be added in upcoming milestones.
+Navigate to the folder that you want to download the pythoshop package.
+```bash
+# 1. clone the repo
+$ git clone git@github.com:UBC-MDS/Pythoshop.git
+```
+
+```bash
+# 2. create virtual environment
+$ conda create --name pythoshop python=3.9 -y
+$ conda activate pythoshop
+```
+
+```bash
+# 3. install the package at the command line from the root package directory:
+$ poetry install
+```
+After you have successfully installed the package , you can find example usage of how to call the functions [here](). 
 
 ## Contributing
 
