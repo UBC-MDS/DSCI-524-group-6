@@ -72,8 +72,25 @@ pip install pythoshop
 ```
 
 ## Usage
+To unleash the power of Pythoshop, follow the simple steps below:
+1. Load the functions from Pythoshop
+```python
+from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
+```
+2. Now you ensure you have know the directory of your images you would like to process.
+3. You are ready to transform your images, below is an example of one how you can change the brightness of your image:
+### Adjust Brightness
 
-After you have successfully installed the package , you can find example usage of how to call the functions [here](). 
+```python
+from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
+
+image_path = "path/to/your/image.jpg"
+brightness_factor = 1.5  # Adjust as needed
+
+adjust_brightness.adjust_brightness(image_path, brightness_factor)
+```
+
+For further details and how you can use the other 3 functions, please refer to the examples linked here [here](). 
 
 ## Contributing
 
