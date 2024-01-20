@@ -7,7 +7,7 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 - **adjust_brightness(img_path, brightness_factor):**
   Adjusts the brightness of an image specified by the given image path. The `brightness_factor` parameter allows fine-tuning the brightness level.
 
-- **resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):**
+- **resize_image(image_path, height, width, method:, verbose):**
   This function takes an image path and adjusts the image to have the inputted dimensions using the selected method.
 
 - **transform_image(img_path, method, direction):**
@@ -49,7 +49,7 @@ Open your command line interface (CLI) and type `conda list`. If Anaconda is ins
 
 We recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support. (You will be installing poetry in your base environment, make sure to add poerty to system path on windows)
 
-Now navigate to the folder that you want to download the pythoshop package.
+Now navigate to the folder where you want to download the pythoshop package.
 ```bash
 # 1. clone the repo
 $ git clone git@github.com:UBC-MDS/Pythoshop.git
@@ -77,8 +77,8 @@ To unleash the power of Pythoshop, follow the simple steps below:
 ```python
 from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
 ```
-2. Now you ensure you have know the directory of your images you would like to process.
-3. You are ready to transform your images, below is an example of one how you can change the brightness of your image:
+2. Make sure you save the images you need to transform , and have their image paths ready
+3. Now, You can process your images, below is an example of one how you can change the brightness of your image:
 ### Adjust Brightness
 
 ```python
