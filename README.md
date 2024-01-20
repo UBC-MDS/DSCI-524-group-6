@@ -7,7 +7,7 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 - **adjust_brightness(img_path, brightness_factor):**
   Adjusts the brightness of an image specified by the given image path. The `brightness_factor` parameter allows fine-tuning the brightness level.
 
-- **resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):**
+- **resize_image(image_path, height, width, method:, verbose):**
   This function takes an image path and adjusts the image to have the inputted dimensions using the selected method.
 
 - **transform_image(img_path, method, direction):**
@@ -30,13 +30,7 @@ Pythoshop complements existing image processing libraries in the Python ecosyste
 
 ## Installation
 
-```bash
-# you can't use this for now since the package hasn't been published yet.
-$ pip install pythoshop
-```
-
-## Usage
-
+This package is currently under development. Hence the installation instructions are as below.
 First, you need to make sure you have installed conda and poetry.
 
 **To install Anaconda:**
@@ -53,9 +47,9 @@ Open your command line interface (CLI) and type `conda list`. If Anaconda is ins
 
 **To install `poetry`, follow the instructions below:**
 
-we recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support.
+We recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support. (You will be installing poetry in your base environment, make sure to add poerty to system path on windows)
 
-Now navigate to the folder that you want to download the pythoshop package.
+Now navigate to the folder where you want to download the pythoshop package.
 ```bash
 # 1. clone the repo
 $ git clone git@github.com:UBC-MDS/Pythoshop.git
@@ -71,7 +65,32 @@ $ conda activate pythoshop
 # 3. install the package at the command line from the root package directory:
 $ poetry install
 ```
-After you have successfully installed the package , you can find example usage of how to call the functions [here](). 
+In the future 
+Once this package is published on PyPi, the package will be available for installation via:
+```
+pip install pythoshop
+```
+
+## Usage
+To unleash the power of Pythoshop, follow the simple steps below:
+1. Load the functions from Pythoshop
+```python
+from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
+```
+2. Make sure you save the images you need to transform , and have their image paths ready
+3. Now, You can process your images, below is an example of one how you can change the brightness of your image:
+### Adjust Brightness
+
+```python
+from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
+
+image_path = "path/to/your/image.jpg"
+brightness_factor = 1.5  # Adjust as needed
+
+adjust_brightness.adjust_brightness(image_path, brightness_factor)
+```
+
+For further details and how you can use the other 3 functions, please refer to the examples linked [here](https://github.com/UBC-MDS/Pythoshop/blob/main/docs/example.ipynb). 
 
 ## Contributing
 
