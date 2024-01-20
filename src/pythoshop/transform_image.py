@@ -49,8 +49,10 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     if method.lower() == 'rotate':
         if direction == 'clockwise':
             new_image = np.rot90(img, -1)
+            new_image = np.copy(new_image, order='C')
         elif direction.lower() == 'counterclockwise':
             new_image = np.rot90(img, 1)
+            new_image = np.copy(new_image, order='C')
         else:
             raise ValueError("For rotation, the direction should be either 'clockwise' or 'counterclockwise'")
     
@@ -68,8 +70,6 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     plt.show()
 
     output_path = image_path.rsplit('.', 1)[0] + "_trns_img.png"
-    new_image = np.ascontiguousarray(new_image)
     mpimg.imsave(output_path, new_image, format = "png")
-    #plt.savefig(output_path, bbox_inches='tight', pad_inches=0)
 
     print(f"Transformed image saved as {output_path}")
