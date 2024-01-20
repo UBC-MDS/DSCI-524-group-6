@@ -7,7 +7,7 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 - **adjust_brightness(img_path, brightness_factor):**
   Adjusts the brightness of an image specified by the given image path. The `brightness_factor` parameter allows fine-tuning the brightness level.
 
-- **resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):**
+- **resize_image(image_path, height, width, method:, verbose):**
   This function takes an image path and adjusts the image to have the inputted dimensions using the selected method.
 
 - **transform_image(img_path, method, direction):**
