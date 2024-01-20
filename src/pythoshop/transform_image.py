@@ -68,6 +68,8 @@ def transform_image(image_path: str, method: str = 'rotate', direction: str = 'c
     plt.show()
 
     output_path = image_path.rsplit('.', 1)[0] + "_trns_img.png"
-    mpimg.imsave(output_path, new_image, format = 'png')
+    new_image = np.ascontiguousarray(new_image)
+    mpimg.imsave(output_path, new_image, format = "png")
+    #plt.savefig(output_path, bbox_inches='tight', pad_inches=0)
 
     print(f"Transformed image saved as {output_path}")
