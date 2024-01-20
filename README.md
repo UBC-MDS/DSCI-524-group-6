@@ -77,8 +77,8 @@ To unleash the power of Pythoshop, follow the simple steps below:
 ```python
 from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
 ```
-2. Now you ensure you have know the directory of your images you would like to process.
-3. You are ready to transform your images, below is an example of one how you can change the brightness of your image:
+2. Make sure you images you need to transform , and have the image paths ready
+3. Now, You can process your images, below is an example of one how you can change the brightness of your image:
 ### Adjust Brightness
 
 ```python
@@ -90,7 +90,7 @@ brightness_factor = 1.5  # Adjust as needed
 adjust_brightness.adjust_brightness(image_path, brightness_factor)
 ```
 
-For further details and how you can use the other 3 functions, please refer to the examples linked here [here](). 
+For further details on how you can use the other 3 functions, please refer to the examples linked here [here](). 
 
 ## Contributing
 
