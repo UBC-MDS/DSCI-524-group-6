@@ -49,7 +49,7 @@ Open your command line interface (CLI) and type `conda list`. If Anaconda is ins
 
 We recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support. (You will be installing poetry in your base environment, make sure to add poerty to system path on windows)
 
-Now navigate to the folder that you want to download the pythoshop package.
+Now navigate to the folder where you want to download the pythoshop package.
 ```bash
 # 1. clone the repo
 $ git clone git@github.com:UBC-MDS/Pythoshop.git
