@@ -30,13 +30,6 @@ Pythoshop complements existing image processing libraries in the Python ecosyste
 
 ## Installation
 
-```bash
-# you can't use this for now since the package hasn't been published yet.
-$ pip install pythoshop
-```
-
-## Usage
-
 First, you need to make sure you have installed conda and poetry.
 
 **To install Anaconda:**
@@ -71,6 +64,10 @@ $ conda activate pythoshop
 # 3. install the package at the command line from the root package directory:
 $ poetry install
 ```
+
+
+## Usage
+
 After you have successfully installed the package , you can find example usage of how to call the functions [here](). 
 
 ## Contributing
