@@ -4,6 +4,8 @@
 
 Pythoshop is a Python package designed to provide a set of handy image processing functions for simple yet effective adjustments to images. Whether you need to tweak brightness, adjust aspect ratios, transform images, or apply filters, Pythoshop has you covered.
 
+[![Documentation Status](https://readthedocs.org/projects/pythoshop/badge/?version=latest)](https://pythoshop.readthedocs.io/en/latest/?badge=latest)
+
 ## Functions
 
 - **adjust_brightness(img_path, brightness_factor):**
