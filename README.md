@@ -1,5 +1,7 @@
 # Pythoshop
 
+![Pythoshop cover image](img/cover.png)
+
 Pythoshop is a Python package designed to provide a set of handy image processing functions for simple yet effective adjustments to images. Whether you need to tweak brightness, adjust aspect ratios, transform images, or apply filters, Pythoshop has you covered.
 
 ## Functions
