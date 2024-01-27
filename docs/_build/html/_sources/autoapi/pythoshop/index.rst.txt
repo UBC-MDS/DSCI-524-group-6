@@ -12,7 +12,8 @@ Submodules
 
    adjust_brightness/index.rst
    apply_filter/index.rst
-   pythoshop/index.rst
+   resize_image/index.rst
+   transform_image/index.rst
 
 
 Package Contents
