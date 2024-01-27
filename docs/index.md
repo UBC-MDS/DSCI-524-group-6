@@ -1,3 +1,5 @@
+![](img/pythoshop-logo.png)
+
 ```{include} ../README.md
 ```
 
