@@ -3,6 +3,10 @@ import matplotlib.image as mpimg
 import numpy as np
 import os
 
+import matplotlib
+
+matplotlib.use('Agg') 
+
 def transform_image(image_path: str, method: str = 'rotate', direction: str = 'clockwise'):
     """
     Transform Image Function
