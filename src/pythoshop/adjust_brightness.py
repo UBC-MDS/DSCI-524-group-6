@@ -46,8 +46,9 @@ def adjust_brightness(image_path, brightness_factor):
             adjusted_img = np.clip(img.astype(np.float32) * (1 + brightness_factor), 0, 1)
 
         # Save the adjusted image
-        new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
-        mpimg.imsave(new_image_path, adjusted_img)
+        # new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
+        # mpimg.imsave(f"", adjusted_img)
+        mpimg.imsave(f"{image_path}_brightness_changed.png", adjusted_img)
 
     except FileNotFoundError as fnf_error:
         raise FileNotFoundError(fnf_error)
