@@ -2,10 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-import matplotlib
-
-matplotlib.use('Agg') 
-
 def resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):
     """
     Image Resizing Function

@@ -3,10 +3,6 @@ import matplotlib.image as mpimg
 import numpy as np
 import os
 
-import matplotlib
-
-matplotlib.use('Agg') 
-
 def adjust_brightness(image_path, brightness_factor):
     """
     Adjust the brightness of an image and save the result.
