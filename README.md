@@ -103,7 +103,10 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Contributors
 
-Salva Umar, Jenny Lee, Ella Hein, Runtian (Rachel) Li.
+Salva Umar, 
+Jenny Lee, 
+Ella Hein, 
+Runtian (Rachel) Li.
 
 ## License
 
