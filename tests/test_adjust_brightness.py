@@ -16,7 +16,7 @@ def test_data():
 @pytest.mark.usefixtures("test_data")
 class TestAdjustBrightness:
     def test_brightness_adjustment(self, test_data):
-        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + "_brightness_changed.png"
+        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + ".png_brightness_changed.png"
         if os.path.exists(expected_output_path):
             os.remove(expected_output_path)
         original_img = mpimg.imread(test_data.test_image_path)
@@ -26,7 +26,7 @@ class TestAdjustBrightness:
         os.remove(expected_output_path)
 
     def test_max_brightness_adjustment(self, test_data):
-        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + "_brightness_changed.png"
+        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + ".png_brightness_changed.png"
         if os.path.exists(expected_output_path):
             os.remove(expected_output_path)
         original_img = mpimg.imread(test_data.test_image_path)
@@ -36,7 +36,7 @@ class TestAdjustBrightness:
         os.remove(expected_output_path)
 
     def test_brightness_decrease(self, test_data):
-        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + "_brightness_changed.png"
+        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + ".png_brightness_changed.png"
         if os.path.exists(expected_output_path):
             os.remove(expected_output_path)
         original_img = mpimg.imread(test_data.test_image_path)
@@ -46,7 +46,7 @@ class TestAdjustBrightness:
         os.remove(expected_output_path)
 
     def test_no_brightness_change(self, test_data):
-        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + "_brightness_changed.png"
+        expected_output_path = os.path.splitext(test_data.test_image_path)[0] + ".png_brightness_changed.png"
         if os.path.exists(expected_output_path):
             os.remove(expected_output_path)
         original_img = mpimg.imread(test_data.test_image_path)
