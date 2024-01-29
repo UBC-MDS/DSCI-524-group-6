@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2024-01-29)
+
+### Fix
+
+* fix: Fixed the author names ([`047f9eb`](https://github.com/UBC-MDS/Pythoshop/commit/047f9eb90ff5ded1643c052ff8a59731b026a15f))
+
+
 ## v0.1.0 (2024-01-29)
 
 ### Build
