@@ -2,6 +2,23 @@
 
 
 
+## v0.2.0 (2024-01-29)
+
+### Feature
+
+* feat: Update README.md
+
+Updated badges with the license, release details, release date, and docs status. ([`bdd69fe`](https://github.com/UBC-MDS/Pythoshop/commit/bdd69fe3ccc2b719b3502f6044ac26578fee295e))
+
+* feat: Added python version to readme ([`3ecfe9f`](https://github.com/UBC-MDS/Pythoshop/commit/3ecfe9fe4386b3de78386860a0e78a7562be0e9c))
+
+### Unknown
+
+* Merge pull request #99 from UBC-MDS/97-adding-badges-to-readme
+
+97 adding badges to readme ([`3faef8c`](https://github.com/UBC-MDS/Pythoshop/commit/3faef8c680e325ed65b72a1fd4b794fe3e077a0d))
+
+
 ## v0.1.2 (2024-01-29)
 
 ### Fix
