@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2024-01-29)
+
+### Fix
+
+* fix: fixed the ci-cd pipeline ([`6fd91ca`](https://github.com/UBC-MDS/Pythoshop/commit/6fd91ca1c7d7c7966cd26f306ba5d227872a8f60))
+
+
 ## v0.1.1 (2024-01-29)
 
 ### Fix
