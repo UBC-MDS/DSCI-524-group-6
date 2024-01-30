@@ -2,6 +2,13 @@
 
 
 
+## v0.2.2 (2024-01-30)
+
+### Fix
+
+* fix: fix the filenotfounderror ([`1658253`](https://github.com/UBC-MDS/Pythoshop/commit/1658253dafbe0c2b14a0aa16140c1a78c77a88ef))
+
+
 ## v0.2.1 (2024-01-30)
 
 ### Fix
