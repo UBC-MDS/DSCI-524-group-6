@@ -2,6 +2,13 @@
 
 
 
+## v0.2.1 (2024-01-30)
+
+### Fix
+
+* fix: fixed the badge linking issue ([`3133ac6`](https://github.com/UBC-MDS/Pythoshop/commit/3133ac654ed8f90b14847f0c1e03439f10d9ea12))
+
+
 ## v0.2.0 (2024-01-29)
 
 ### Feature
