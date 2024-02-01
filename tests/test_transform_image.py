@@ -16,9 +16,19 @@ class TestTransformImage(unittest.TestCase):
             transform_height, transform_width = created_image.shape[:2]
             self.assertEqual(self.height, transform_width)
             self.assertEqual(self.width, transform_height)
+      
+            created_image = transform_image(image = self.test_image, direction = "counterclockwise")
+            transform_height, transform_width = created_image.shape[:2]
+            self.assertEqual(self.height, transform_width)
+            self.assertEqual(self.width, transform_height)
 
       def test_flip(self):
             created_image = transform_image(image = self.test_image, method = "flip", direction = "vertical")
+            transform_height, transform_width = created_image.shape[:2]
+            self.assertEqual(self.height, transform_height)
+            self.assertEqual(self.width, transform_width)
+      
+            created_image = transform_image(image = self.test_image, method = "flip", direction = "horizontal")
             transform_height, transform_width = created_image.shape[:2]
             self.assertEqual(self.height, transform_height)
             self.assertEqual(self.width, transform_width)
@@ -26,6 +36,10 @@ class TestTransformImage(unittest.TestCase):
       def test_transform_raises_value_error(self):
             with self.assertRaises(ValueError):
                   transform_image(image = self.test_image, method = "flip", direction = "clockwise")
+                  transform_image(image = self.test_image, method = "flip", direction = "counterclockwise")
+                  transform_image(image = self.test_image, method = "rotate", direction = "vertical")
+                  transform_image(image = self.test_image, method = "rotate", direction = "horizontal")
       
+
 if __name__ == '__main__':
     unittest.main()
