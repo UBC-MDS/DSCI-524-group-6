@@ -94,7 +94,7 @@ brightness_factor = 1.5  # Adjust as needed
 adjust_brightness.adjust_brightness(image_path, brightness_factor)
 ```
 
-For further details and how you can use the other 3 functions, please refer to the examples linked [here](https://github.com/UBC-MDS/Pythoshop/blob/main/docs/example.ipynb). 
+For further details and how you can use the other 3 functions, please refer to the examples linked [here](https://pythoshop.readthedocs.io/en/latest/?badge=latest). 
 
 ## Contributing
 
