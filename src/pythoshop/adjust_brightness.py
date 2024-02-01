@@ -3,7 +3,7 @@ import matplotlib.image as mpimg
 import numpy as np
 import os
 
-def adjust_brightness(image_path, brightness_factor):
+def adjust_brightness(img, brightness_factor, verbose=False):
     """
     Adjust the brightness of an image and save the result.
 
@@ -29,33 +29,27 @@ def adjust_brightness(image_path, brightness_factor):
     ------
     IOError
         If the image file cannot be opened or saved.
+    
+    Example:
+    >>> img = mpimg.imread("tests/test_img_1.png")
+    >>> img_adjusted = adjust_brightness(img, -0.3)
+
     """
     if not isinstance(brightness_factor, (int, float)):
         raise ValueError("Brightness factor must be an integer or float")
 
     try:
-        # Read the image file using matplotlib
-        img = mpimg.imread(image_path)
-
         # Check if brightness_factor is integer or float and adjust brightness accordingly
         if isinstance(brightness_factor, int):
             # Adjust brightness for integer factor
             adjusted_img = np.clip(img.astype(np.int16) + brightness_factor, 0, 255).astype(np.uint8)
+
         elif isinstance(brightness_factor, float):
             # Adjust brightness for float factor
             adjusted_img = np.clip(img.astype(np.float32) * (1 + brightness_factor), 0, 1)
 
-        # Save the adjusted image
-        # new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
-        # mpimg.imsave(f"", adjusted_img)
-        mpimg.imsave(f"{image_path}_brightness_changed.png", adjusted_img)
+        return adjusted_img
 
-    except FileNotFoundError as fnf_error:
-        raise FileNotFoundError(fnf_error)
     except Exception as e:
         raise IOError(f"Error processing the image: {e}")
 
-# Example usage:
-# Note: You can use this function by providing a valid image path and a brightness factor.
-# adjust_brightness('path/to/image.jpg', 0.3)  # Increase brightness by 30%
-# adjust_brightness('path/to/image.png', -50)  # Decrease brightness by 50 units
