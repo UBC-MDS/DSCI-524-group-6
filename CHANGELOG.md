@@ -2,6 +2,15 @@
 
 
 
+## v0.2.8 (2024-02-01)
+
+### Fix
+
+* fix: updated the link to docs to make it easy to find ([`f7a23e6`](https://github.com/UBC-MDS/Pythoshop/commit/f7a23e6e6e9f55b34b3d765c0af145d5a6b1d275))
+
+* fix: fixing project toml again ([`c743bfa`](https://github.com/UBC-MDS/Pythoshop/commit/c743bfaf22c67f5dd94a353bc7a4dafa07eb1909))
+
+
 ## v0.2.7 (2024-02-01)
 
 ### Fix
