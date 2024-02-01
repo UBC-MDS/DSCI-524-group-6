@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 
-def transform_image(image, method: str = 'rotate', direction: str = 'clockwise', verbose: bool = True):
+def transform_image(image, method: str = 'rotate', direction: str = 'clockwise', verbose: bool = False):
     """
     Transform Image Function
     This function takes a numpy image array and either rotates or flips the image in a 
@@ -25,7 +25,7 @@ def transform_image(image, method: str = 'rotate', direction: str = 'clockwise',
     Returns:
     -------
     Image Numpy Array
-        The adjusted image is returned as a NumPy array.
+        The adjusted image, returned as a NumPy array.
         
     Raises
     ------
@@ -34,8 +34,8 @@ def transform_image(image, method: str = 'rotate', direction: str = 'clockwise',
         or the method or direction are not one of the options.
     
     Example:
-    >>> input_path = 'path/to/input_image.jpg'
-    >>> adjust_aspect_ratio(input_path, method = 'flip', direction = 'horizontal')
+    >>> image = mpimg.imread('path/to/input_image.jpg')
+    >>> transform_image(image, method = 'flip', direction = 'horizontal', transpose = False)
     """
     img = np.array(image)
     new_image = img.copy()
