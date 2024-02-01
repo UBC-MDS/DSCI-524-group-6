@@ -2,6 +2,19 @@
 
 
 
+## v3.2.10 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #113 from UBC-MDS/112-fix-transform_image
+
+fix: milestone_feedback transform_image updated to read image object ([`01e09f6`](https://github.com/UBC-MDS/Pythoshop/commit/01e09f6082176a45ab44ead5911aa994c2420af5))
+
+* Merge pull request #115 from UBC-MDS/114-fix-milestone-feedback-updating-the-docs-to-match-the-new-function-adjustment-for-resize_image
+
+fix: milestone_feedback and peer_review added the updated docs for th… ([`60b9637`](https://github.com/UBC-MDS/Pythoshop/commit/60b963741b09942799bd724ba7f4d3470f8959ce))
+
+
 ## v3.2.9 (2024-02-01)
 
 ### Fix
@@ -17,8 +30,14 @@
 
 * fix: fixing project toml again ([`c743bfa`](https://github.com/UBC-MDS/Pythoshop/commit/c743bfaf22c67f5dd94a353bc7a4dafa07eb1909))
 
+* fix: milestone_feedback and peer_review added the updated docs for the functions ([`a3ffd53`](https://github.com/UBC-MDS/Pythoshop/commit/a3ffd53ad6dfcb20053f7fc80b97142243818c17))
+
 
 ## v0.2.7 (2024-02-01)
+
+### Documentation
+
+* docs: added example and updated docstrings ([`d0a01c6`](https://github.com/UBC-MDS/Pythoshop/commit/d0a01c60f4724cebf53c38952c292f2688d13eb6))
 
 ### Fix
 
@@ -26,8 +45,14 @@
 
 * fix: Milestone 4 license added GNU GPLv3 ([`a077dae`](https://github.com/UBC-MDS/Pythoshop/commit/a077dae8cb53407616938d6a221bab8ba5645170))
 
+* fix: Added value error checking for all cases ([`7c35668`](https://github.com/UBC-MDS/Pythoshop/commit/7c356688620cf2c56b8dde45b9b4b0a4832703fe))
+
 
 ## v0.2.6 (2024-02-01)
+
+### Fix
+
+* fix: fixed return value ([`80959db`](https://github.com/UBC-MDS/Pythoshop/commit/80959db7ec3ab76237b4d6373367d528ea2bc98c))
 
 ### Unknown
 
@@ -43,6 +68,10 @@ added changed function and tests for apply filter ([`c5dc6cd`](https://github.co
 ## v0.2.5 (2024-02-01)
 
 ### Fix
+
+* fix: updated test to read numpy object instead of image path ([`f5d2a1b`](https://github.com/UBC-MDS/Pythoshop/commit/f5d2a1bfb427a79e7fa56dcc20f5a18e80c15735))
+
+* fix: Changed input from path name to image object ([`7227ef5`](https://github.com/UBC-MDS/Pythoshop/commit/7227ef549b24f1e0629ebaa7c20c4123efd6409e))
 
 * fix: milestone2 grader feedback-tests design, documentation and test coverage ([`b7c99a2`](https://github.com/UBC-MDS/Pythoshop/commit/b7c99a25237ea0b93922d546c0c19aa1cf5de506))
 
