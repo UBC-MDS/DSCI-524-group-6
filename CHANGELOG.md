@@ -2,6 +2,19 @@
 
 
 
+## v0.2.3 (2024-02-01)
+
+### Fix
+
+* fix: updated the version of the toml file ([`8f496e7`](https://github.com/UBC-MDS/Pythoshop/commit/8f496e7a9a138151eccf8e214a1515d745a8d96c))
+
+### Unknown
+
+* Merge pull request #107 from UBC-MDS/106-bump-up-the-toml-versioning
+
+fix: updated the version of the toml file ([`7729e55`](https://github.com/UBC-MDS/Pythoshop/commit/7729e55858f086dddd0955735b277619202ebbef))
+
+
 ## v0.2.2 (2024-01-30)
 
 ### Fix
