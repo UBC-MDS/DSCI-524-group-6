@@ -33,35 +33,20 @@ def adjust_brightness(img, brightness_factor, verbose=False):
     Example:
     >>> img = mpimg.imread("tests/test_img_1.png")
     >>> img_adjusted = adjust_brightness(img, -0.3)
-    
+
     """
     if not isinstance(brightness_factor, (int, float)):
         raise ValueError("Brightness factor must be an integer or float")
 
     try:
-        # Read the image file using matplotlib
-        # img = mpimg.imread(image_path)
-
         # Check if brightness_factor is integer or float and adjust brightness accordingly
         if isinstance(brightness_factor, int):
             # Adjust brightness for integer factor
             adjusted_img = np.clip(img.astype(np.int16) + brightness_factor, 0, 255).astype(np.uint8)
-            if verbose:
-                plt.imshow(adjusted_img)
-                plt.axis('off')  # Hide axis
-                plt.show()
+
         elif isinstance(brightness_factor, float):
             # Adjust brightness for float factor
             adjusted_img = np.clip(img.astype(np.float32) * (1 + brightness_factor), 0, 1)
-            if verbose:
-                plt.imshow(adjusted_img)
-                plt.axis('off')  # Hide axis
-                plt.show()
-
-        # Save the adjusted image
-        # new_image_path = os.path.splitext(image_path)[0] + "_brightness_changed.png"
-        # mpimg.imsave(f"", adjusted_img)
-        # mpimg.imsave(f"{image_path}_brightness_changed.png", adjusted_img)
 
         return adjusted_img
 
