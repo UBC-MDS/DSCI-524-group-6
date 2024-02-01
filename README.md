@@ -8,17 +8,17 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 
 ## Functions
 
-- **adjust_brightness(img_path, brightness_factor):**
-  Adjusts the brightness of an image specified by the given image path. The `brightness_factor` parameter allows fine-tuning the brightness level.
+- **adjust_brightness(image, brightness_factor, verbose):**
+  Adjusts the brightness of an image object in the form of a NumPy array. The `brightness_factor` parameter allows fine-tuning the brightness level.
 
-- **resize_image(image_path, height, width, method:, verbose):**
-  This function takes an image path and adjusts the image to have the inputted dimensions using the selected method.
+- **resize_image(image, height, width, method:, verbose):**
+  This function takes an image object and adjusts the image to have the inputted dimensions using the selected method.
 
-- **transform_image(img_path, method, direction):**
-  Transforms an image based on the specified method and direction. Options include "rotate" or "flip", allowing users to orient images as needed.
+- **transform_image(image, method, direction, verbose):**
+  Transforms an image object based on the specified method and direction. Options include "rotate" or "flip", allowing users to orient images as needed. 
 
-- **apply_filter(img_path, method, degree):**
-  Applies a filter to an image specified by the given image path. Users can choose from filter methods and adjust the degree of filtering to achieve the desired visual effect.
+- **apply_filter(image, method, degree, verbose):**
+  Applies a filter to an image object in the form of a NumPy array. Users can choose from filter methods and adjust the degree of filtering to achieve the desired visual effect.
 
 
 ## Python Ecosystem Integration
