@@ -1,42 +1,32 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 
-def resize_image(image_path: str, height: int, width: int, method: str = 'crop', verbose: bool = True):
+def resize_image(image, height, width, method='crop', verbose=False):
     """
     Image Resizing Function
 
-    This function takes an image path and adjusts the image to have
-    the inputted dimensions using the selected method.
+    This function takes an image and adjusts it to have the inputted dimensions using the selected method.
 
     Parameters:
-    - image_path (str): The path to the input image.
+    - image (numpy.ndarray): The input image array.
     - height (int): The desired height for the image.
     - width (int): The desired width for the image.
     - method (str, optional): The method to obtain the desired image dimensions.
       Options: 'maintain_aspect_ratio' (default) for maintaining the aspect ratio,
                'crop' for cropping to the specified dimensions,
                'add_borders' for adding borders to maintain the aspect ratio.
-    - verbose (bool, optional): If True, print verbose information.
+    - verbose (bool, optional): If True, print verbose information. False is the default.
 
     Returns:
-    - None
-    The resized image is saved as a .png file at the same location as the input with "_res_img.png" appended
-    to the original filename.
+    - Image Numpy Array
+    The resized image is returned as a numpy array.
 
     Raises:
-
-    - FileNotFoundError: If the specified file does not exist.
-    - ValueError: If a method outside the available options is added
-
-    Example:
-    >>> input_path = "path/to/input_image.jpg"
-    >>> resize_image(input_path, height=200, width=200, method='crop')
+    - ValueError: If an invalid resize method is provided.
     """
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"The file '{image_path}' does not exist.")
-    
-    img = plt.imread(image_path)
+
+    img = np.array(image)  # Ensure input is a numpy array
+
     if verbose:
         print(f"Initial image dimensions: {img.shape}")
 
@@ -62,16 +52,9 @@ def resize_image(image_path: str, height: int, width: int, method: str = 'crop',
     else:
         raise ValueError("Invalid resize method. Supported methods: 'maintain_aspect_ratio', 'crop', 'add_borders'.")
 
-    plt.axis('off')
-    save_img = img[:, :, :3] if img.shape[2] == 4 else img  # If the image has an alpha channel, discard it
-    plt.imsave(f'{image_path[:-4]}_res_img.png', save_img, format='png')  # Save the resized image with higher resolution and tighter bounding box
-
     if verbose:
-        print(f"Resized image saved as: {image_path[:-4]}_res_img.png")
-        resized_img = plt.imread(f"{image_path[:-4]}_res_img.png")
-        print("Resize Image Dimensions: ", resized_img.shape)
-        
-        if verbose:
-            plt.imshow(img)  # Display the resized image
-            plt.show()
+        print("Resized Image Dimensions: ", img.shape)
+        plt.imshow(img)  # Display the resized image
+        plt.show()
 
+    return img
