@@ -2,9 +2,26 @@
 
 
 
+## v0.2.6 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #110 from UBC-MDS/fix-apply-filter
+
+added changed function and tests for apply filter ([`c5dc6cd`](https://github.com/UBC-MDS/Pythoshop/commit/c5dc6cd3c55c3e6fa8eedf8139ec5d4502805c80))
+
+* Merge pull request #111 from UBC-MDS/104-fix-the-adjust_brightness-function-and-the-tests
+
+104 fix the adjust brightness function and the tests ([`4d288a1`](https://github.com/UBC-MDS/Pythoshop/commit/4d288a18ef609bf473868a8d446b7ad1841f9f21))
+
+
 ## v0.2.5 (2024-02-01)
 
 ### Fix
+
+* fix: milestone2 grader feedback-tests design, documentation and test coverage ([`b7c99a2`](https://github.com/UBC-MDS/Pythoshop/commit/b7c99a25237ea0b93922d546c0c19aa1cf5de506))
+
+* fix: milestone2 feedback from grader ([`81bc03d`](https://github.com/UBC-MDS/Pythoshop/commit/81bc03d27f6057fdbe944dcfd5bb7a4f4f4563ad))
 
 * fix: milestone_feedback updated the test function to match the updates in the main funciton ([`36328f2`](https://github.com/UBC-MDS/Pythoshop/commit/36328f27114eff1fe36447bf32e7e1987fe77b2c))
 
@@ -15,6 +32,8 @@
 * Merge pull request #108 from UBC-MDS/105-fix-resize_image-function-and-test-corresponding-to-the-changes-made
 
 105 fix resize image function and test corresponding to the changes made ([`e46006f`](https://github.com/UBC-MDS/Pythoshop/commit/e46006f7f964f46d8e4f5e856bcfdfb1a57f8159))
+
+* added changed function and tests for apply filter ([`a0becd5`](https://github.com/UBC-MDS/Pythoshop/commit/a0becd588ef9b2d93351a1ccfc097a63b30e84d9))
 
 
 ## v0.2.4 (2024-02-01)
