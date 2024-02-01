@@ -9,16 +9,16 @@ Pythoshop is a Python package designed to provide a set of handy image processin
 ## Functions
 
 - **adjust_brightness(image, brightness_factor, verbose):**
-  Adjusts the brightness of an image object in the form of a NumPy array. The `brightness_factor` parameter allows fine-tuning the brightness level.
+  Adjusts the brightness of an image object in the form of a NumPy array. The `brightness_factor` parameter allows fine-tuning the brightness level. Returns an updated NumPy array.
 
 - **resize_image(image, height, width, method:, verbose):**
-  This function takes an image object and adjusts the image to have the inputted dimensions using the selected method.
+  This function takes a Numpy array image object and adjusts the image to have the inputted dimensions using the selected method. Returns an updated NumPy array.
 
 - **transform_image(image, method, direction, verbose):**
-  Transforms an image object based on the specified method and direction. Options include "rotate" or "flip", allowing users to orient images as needed. 
+  Transforms a NumPy array image object based on the specified method and direction. Options include "rotate" or "flip", allowing users to orient images as needed. Returns an updated NumPy array.
 
 - **apply_filter(image, method, degree, verbose):**
-  Applies a filter to an image object in the form of a NumPy array. Users can choose from filter methods and adjust the degree of filtering to achieve the desired visual effect.
+  Applies a filter to an image object in the form of a NumPy array. Users can choose from filter methods and adjust the degree of filtering to achieve the desired visual effect. Returns an updated NumPy array.
 
 
 ## Python Ecosystem Integration
@@ -81,17 +81,17 @@ To unleash the power of Pythoshop, follow the simple steps below:
 ```python
 from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
 ```
-2. Make sure you save the images you need to transform , and have their image paths ready
+2. Make sure you assign the images you need to transform in the form of NumPy arrays.
 3. Now, You can process your images, below is an example of one how you can change the brightness of your image:
 ### Adjust Brightness
 
 ```python
 from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
 
-image_path = "path/to/your/image.jpg"
+image = mpimg.imread('path/to/input_image.jpg')
 brightness_factor = 1.5  # Adjust as needed
 
-adjust_brightness.adjust_brightness(image_path, brightness_factor)
+adjust_brightness.adjust_brightness(image, brightness_factor)
 ```
 
 For further details and how you can use the other 3 functions, please refer to the examples linked [here](https://pythoshop.readthedocs.io/en/latest/?badge=latest). 
@@ -106,7 +106,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 Salva Umar, 
 Jenny Lee, 
 Ella Hein, 
-Runtian (Rachel) Li.
+Runtian (Rachel) Li
 
 ## License
 
