@@ -51,7 +51,7 @@ Open your command line interface (CLI) and type `conda list`. If Anaconda is ins
 
 **To install `poetry`, follow the instructions below:**
 
-We recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support. (You will be installing poetry in your base environment, make sure to add poerty to system path on windows)
+We recommend installing `Poetry` using their official installer while referring to their official [poetry documentation](https://python-poetry.org/docs/) for detailed installation instructions and support. (You will be installing poetry in your base environment, make sure to add poetry to system path on windows)
 
 Now navigate to the folder where you want to download the pythoshop package.
 ```bash
@@ -87,6 +87,7 @@ from pythoshop import adjust_brightness, resize_image, transform_image, apply_fi
 
 ```python
 from pythoshop import adjust_brightness, resize_image, transform_image, apply_filter
+import matplotlib.image as mpimg
 
 image = mpimg.imread('path/to/input_image.jpg')
 brightness_factor = 1.5  # Adjust as needed
