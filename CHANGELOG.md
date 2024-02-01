@@ -2,6 +2,13 @@
 
 
 
+## v0.2.4 (2024-02-01)
+
+### Fix
+
+* fix: updated the toml version which did not change before ([`134c75a`](https://github.com/UBC-MDS/Pythoshop/commit/134c75a7e36b6257d124fbb90558d29529714439))
+
+
 ## v0.2.3 (2024-02-01)
 
 ### Fix
