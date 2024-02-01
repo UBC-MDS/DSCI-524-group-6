@@ -2,6 +2,21 @@
 
 
 
+## v0.2.5 (2024-02-01)
+
+### Fix
+
+* fix: milestone_feedback updated the test function to match the updates in the main funciton ([`36328f2`](https://github.com/UBC-MDS/Pythoshop/commit/36328f27114eff1fe36447bf32e7e1987fe77b2c))
+
+* fix: milestone_feedback fixed the image argument and returns image as well ([`1832342`](https://github.com/UBC-MDS/Pythoshop/commit/183234297c8deb770c9a44178291abea7cddfb84))
+
+### Unknown
+
+* Merge pull request #108 from UBC-MDS/105-fix-resize_image-function-and-test-corresponding-to-the-changes-made
+
+105 fix resize image function and test corresponding to the changes made ([`e46006f`](https://github.com/UBC-MDS/Pythoshop/commit/e46006f7f964f46d8e4f5e856bcfdfb1a57f8159))
+
+
 ## v0.2.4 (2024-02-01)
 
 ### Fix

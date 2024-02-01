@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pythoshop"
-version = "0.2.4"
+version = "0.2.5"
 description = "A Python version of Photoshop where users can do simple tasks of photo editing, such as croopping an image, rescaling an image, applying filters to an image, and much more."
 authors = ["Salva Umar, Jenny Lee, Ella Hein, Rachel Li"]
 license = "MIT"
