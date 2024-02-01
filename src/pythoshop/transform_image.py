@@ -64,4 +64,4 @@ def transform_image(image, method: str = 'rotate', direction: str = 'clockwise',
         plt.imshow(new_image)
         plt.show()
     
-    return img
+    return new_image
