@@ -2,7 +2,14 @@
 
 
 
-## v0.2.8 (2024-02-01)
+## v3.2.9 (2024-02-01)
+
+### Fix
+
+* fix: bug in ci-cd fixed to ensure workflow runs successfully ([`6b95b84`](https://github.com/UBC-MDS/Pythoshop/commit/6b95b8455949ee776a76334e5b0812f203630475))
+
+
+## v3.2.8 (2024-02-01)
 
 ### Fix
 
