@@ -2,6 +2,15 @@
 
 
 
+## v0.2.7 (2024-02-01)
+
+### Fix
+
+* fix: License update Milestone 4 updated in readme ([`ffa815d`](https://github.com/UBC-MDS/Pythoshop/commit/ffa815da73bd17f390c55e4009efc4db574af9fd))
+
+* fix: Milestone 4 license added GNU GPLv3 ([`a077dae`](https://github.com/UBC-MDS/Pythoshop/commit/a077dae8cb53407616938d6a221bab8ba5645170))
+
+
 ## v0.2.6 (2024-02-01)
 
 ### Unknown
