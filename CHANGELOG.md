@@ -2,6 +2,21 @@
 
 
 
+## v3.2.15 (2024-02-02)
+
+### Fix
+
+* fix: adding codecov file to try to run code coverage ([`f5de6c2`](https://github.com/UBC-MDS/Pythoshop/commit/f5de6c2d1bea692bdf65096b7004235753605edb))
+
+### Unknown
+
+* Merge pull request #124 from UBC-MDS/119-fix-example-usages
+
+changed example files ([`17d11ef`](https://github.com/UBC-MDS/Pythoshop/commit/17d11ef42552fb9fa8775e45100652ba9c456275))
+
+* deleted unnecessary files ([`41ca5b0`](https://github.com/UBC-MDS/Pythoshop/commit/41ca5b0af31db7cfb7ba9290519318f2377c1875))
+
+
 ## v3.2.14 (2024-02-02)
 
 ### Fix
@@ -14,6 +29,10 @@
 ### Fix
 
 * fix: trying to initialise code coverage ([`6719e39`](https://github.com/UBC-MDS/Pythoshop/commit/6719e393bbf35218407bc9bfdd0dc4cea94db32f))
+
+### Unknown
+
+* changed example files ([`2fea808`](https://github.com/UBC-MDS/Pythoshop/commit/2fea808cc37872f7889090b2d1cbbf3c81048749))
 
 
 ## v3.2.12 (2024-02-02)
