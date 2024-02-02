@@ -2,9 +2,22 @@
 
 
 
+## v3.2.16 (2024-02-02)
+
+### Unknown
+
+* Merge pull request #126 from UBC-MDS/125-codecov-bug
+
+fix: Add codecov to cd in  ci-cd.yml ([`da4be82`](https://github.com/UBC-MDS/Pythoshop/commit/da4be820afc2c611ae617eacdbae800e48801f2a))
+
+* Delete .github/workflows/codecov.yml ([`13f8a75`](https://github.com/UBC-MDS/Pythoshop/commit/13f8a75982d208e910e0834bcc65aafe9049ea55))
+
+
 ## v3.2.15 (2024-02-02)
 
 ### Fix
+
+* fix: Add codecov to cd in  ci-cd.yml ([`37b6a47`](https://github.com/UBC-MDS/Pythoshop/commit/37b6a47d74fd4e8962bffd659e2ef16eab7463c9))
 
 * fix: adding codecov file to try to run code coverage ([`f5de6c2`](https://github.com/UBC-MDS/Pythoshop/commit/f5de6c2d1bea692bdf65096b7004235753605edb))
 
