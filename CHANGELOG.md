@@ -2,7 +2,44 @@
 
 
 
+## v3.2.11 (2024-02-02)
+
+### Documentation
+
+* docs: Added repo status badge ([`9ee5566`](https://github.com/UBC-MDS/Pythoshop/commit/9ee556635b552968e62da64ac6e01b74992a17ca))
+
+* docs: Added code coverage and ci-cd badges to README.md ([`d28f2a5`](https://github.com/UBC-MDS/Pythoshop/commit/d28f2a5b424410b480a1b5560895ad0ce214b866))
+
+* docs: fixed typo in readme badges ([`af32ea9`](https://github.com/UBC-MDS/Pythoshop/commit/af32ea9e93ad9e71861e3c794761b3efcea18c8d))
+
+* docs: Updated README.md with matplotlib.image import ([`25d151e`](https://github.com/UBC-MDS/Pythoshop/commit/25d151e2b6dc0c406b51518c1fcd4cc41d07513f))
+
+* docs: Updated usage in README.md to match new function inputs ([`861a081`](https://github.com/UBC-MDS/Pythoshop/commit/861a081777020a154fe80a41e5ed4b96e3e79e61))
+
+### Fix
+
+* fix: milestone2 grader feedback-deleted all saved files ([`ff75167`](https://github.com/UBC-MDS/Pythoshop/commit/ff75167aad57979debb23204d7a963e5f2938e34))
+
+### Unknown
+
+* Merge pull request #121 from UBC-MDS/120-delete-all-the-images-after-adjustment
+
+fix: milestone2 grader feedback-deleted all saved files ([`699f943`](https://github.com/UBC-MDS/Pythoshop/commit/699f943252b85b4def99a718c33de802f65fc17b))
+
+* Merge pull request #118 from UBC-MDS/97-update-badges
+
+97 update badges ([`fc218c8`](https://github.com/UBC-MDS/Pythoshop/commit/fc218c8400a2c684dd8cae83a56279e60a61e132))
+
+* Merge pull request #117 from UBC-MDS/116-update-readme
+
+docs: Update README.md with input &#34;image&#34; instead of &#34;image_path&#34; ([`328ade4`](https://github.com/UBC-MDS/Pythoshop/commit/328ade4dbbc0b25f47554a8828cb6b79e978f2c3))
+
+
 ## v3.2.10 (2024-02-01)
+
+### Documentation
+
+* docs: Update README.md with input &#34;image&#34; instead of &#34;image_path&#34; ([`aba6767`](https://github.com/UBC-MDS/Pythoshop/commit/aba6767bbfd161183115c8e649e43720d0fd19d2))
 
 ### Unknown
 
