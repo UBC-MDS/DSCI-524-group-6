@@ -111,7 +111,7 @@ Runtian (Rachel) Li
 
 ## License
 
-`pythoshop` was created by Salva Umar, Jenny Lee, Ella Hein, Rachel Li. It is licensed under the terms of the GNU GPLv3 license.
+`Pythoshop` was created by Salva Umar, Jenny Lee, Ella Hein, Rachel Li. It is licensed under the terms of the GNU GPLv3 license.
 
 ## Credits
 
