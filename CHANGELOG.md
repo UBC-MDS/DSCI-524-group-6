@@ -2,6 +2,13 @@
 
 
 
+## v3.2.14 (2024-02-02)
+
+### Fix
+
+* fix: checking code coverage ([`a73fe28`](https://github.com/UBC-MDS/Pythoshop/commit/a73fe2878cad77bd6bdfadb6de9c409674a64467))
+
+
 ## v3.2.13 (2024-02-02)
 
 ### Fix
