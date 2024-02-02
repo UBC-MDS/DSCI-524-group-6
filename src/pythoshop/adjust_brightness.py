@@ -47,9 +47,14 @@ def adjust_brightness(img, brightness_factor, verbose=False):
         elif isinstance(brightness_factor, float):
             # Adjust brightness for float factor
             adjusted_img = np.clip(img.astype(np.float32) * (1 + brightness_factor), 0, 1)
+            print(type(adjust_brightness))
+
+        if verbose:
+            plt.imshow(adjusted_img)
+            plt.show()
 
         return adjusted_img
 
     except Exception as e:
         raise IOError(f"Error processing the image: {e}")
-
+    
