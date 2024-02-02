@@ -2,6 +2,21 @@
 
 
 
+## v3.2.17 (2024-02-02)
+
+### Fix
+
+* fix: updated ci-cd.yml, changed &#39;env&#39; to &#39;with&#39; ([`2e1c137`](https://github.com/UBC-MDS/Pythoshop/commit/2e1c137798dd4a0bfd021869e12e468c016ab88e))
+
+### Unknown
+
+* Merge pull request #127 from UBC-MDS/125-codecov-bug
+
+125 codecov bug ([`fb3853c`](https://github.com/UBC-MDS/Pythoshop/commit/fb3853cb14600682830356d261276d7d12ea3524))
+
+* fixUpdate README.md ([`a53d7fa`](https://github.com/UBC-MDS/Pythoshop/commit/a53d7faaabc71c1e10507c20eaa043ee27f8ac6d))
+
+
 ## v3.2.16 (2024-02-02)
 
 ### Unknown
