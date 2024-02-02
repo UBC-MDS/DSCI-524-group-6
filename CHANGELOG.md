@@ -2,6 +2,19 @@
 
 
 
+## v3.2.12 (2024-02-02)
+
+### Fix
+
+* fix: Added code coverage token to ci-cd.yml ([`a5574af`](https://github.com/UBC-MDS/Pythoshop/commit/a5574af083fe83d9eee858e54477b1cd6632347e))
+
+### Unknown
+
+* Merge pull request #123 from UBC-MDS/122-fix-codecov-badge
+
+fix: Peer review Added code coverage token to ci-cd.yml ([`7ce89ff`](https://github.com/UBC-MDS/Pythoshop/commit/7ce89ff93277906c818832e46ae3e83f8cefbefa))
+
+
 ## v3.2.11 (2024-02-02)
 
 ### Documentation
