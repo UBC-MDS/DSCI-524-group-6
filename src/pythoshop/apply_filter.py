@@ -42,7 +42,8 @@ def apply_filter(image, method, degree=0.7, verbose=False):
       To apply 'aquamarine' filter on 'photo.jpg' by 70%:
       >>> apply_filter('photo.jpg', 'aquamarine', 0.7)
       """
-      new_image = image.copy()
+      img = np.array(image)
+      new_image = img.copy()
 
       if degree < 0.5:
             raise Exception("Degree of filter shouldn't be smaller than 0.5.")
@@ -73,7 +74,9 @@ def apply_filter(image, method, degree=0.7, verbose=False):
       new_image = np.clip(new_image, 0, 1)
 
       if verbose:
-            plt.imshow(new_image)
+            display_image = np.clip(new_image, 0, 1)
+            plt.imshow(display_image)
+            plt.axis('off')
             plt.show()
       
       return new_image
