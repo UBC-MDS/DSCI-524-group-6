@@ -2,6 +2,13 @@
 
 
 
+## v3.2.13 (2024-02-02)
+
+### Fix
+
+* fix: trying to initialise code coverage ([`6719e39`](https://github.com/UBC-MDS/Pythoshop/commit/6719e393bbf35218407bc9bfdd0dc4cea94db32f))
+
+
 ## v3.2.12 (2024-02-02)
 
 ### Fix
