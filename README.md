@@ -95,7 +95,7 @@ brightness_factor = 1.5  # Adjust as needed
 adjust_brightness.adjust_brightness(image, brightness_factor)
 ```
 
-For further details and how you can use the other 3 functions, please refer to the examples linked [here](https://pythoshop.readthedocs.io/en/latest/?badge=latest). 
+For further details on how you can use the other 3 functions, please refer to the docs linked [here](https://pythoshop.readthedocs.io/en/latest/?badge=latest). 
 
 ## Contributing
 
