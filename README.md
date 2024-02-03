@@ -90,7 +90,7 @@ from pythoshop import adjust_brightness, resize_image, transform_image, apply_fi
 import matplotlib.image as mpimg
 
 image = mpimg.imread('path/to/input_image.jpg')
-brightness_factor = 1.5  # Adjust as needed
+brightness_factor = 20  # Adjust as needed
 
 adjust_brightness.adjust_brightness(image, brightness_factor)
 ```
