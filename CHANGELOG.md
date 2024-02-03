@@ -231,17 +231,8 @@ fix: milestone_feedback and peer_review added the updated docs for th… ([`60b9
 ### Fix
 
 * fix: fixed return value ([`80959db`](https://github.com/UBC-MDS/Pythoshop/commit/80959db7ec3ab76237b4d6373367d528ea2bc98c))
-
-### Unknown
-
-* Merge pull request #110 from UBC-MDS/fix-apply-filter
-
-added changed function and tests for apply filter ([`c5dc6cd`](https://github.com/UBC-MDS/Pythoshop/commit/c5dc6cd3c55c3e6fa8eedf8139ec5d4502805c80))
-
-* Merge pull request #111 from UBC-MDS/104-fix-the-adjust_brightness-function-and-the-tests
-
-104 fix the adjust brightness function and the tests ([`4d288a1`](https://github.com/UBC-MDS/Pythoshop/commit/4d288a18ef609bf473868a8d446b7ad1841f9f21))
-
+* fix: peer_review feedback, added changed function and tests for apply filter for more coverage ([`c5dc6cd`](https://github.com/UBC-MDS/Pythoshop/commit/c5dc6cd3c55c3e6fa8eedf8139ec5d4502805c80))
+* fix: peer_review feedback, 104 fix the adjust brightness function and the tests ([`4d288a1`](https://github.com/UBC-MDS/Pythoshop/commit/4d288a18ef609bf473868a8d446b7ad1841f9f21))
 
 ## v0.2.5 (2024-02-01)
 
