@@ -2,6 +2,17 @@
 
 
 
+## v3.2.22 (2024-02-03)
+
+### Fix
+
+* fix: peer_review feedback, adjust code coverage to be higher ([`4817198`](https://github.com/UBC-MDS/Pythoshop/commit/4817198408dc21e6e2039b67e347508db79eeb68))
+
+### Unknown
+
+* deleted additional image file ([`73da561`](https://github.com/UBC-MDS/Pythoshop/commit/73da561c6ccd246480c71883c978d715dffb9b6e))
+
+
 ## v3.2.21 (2024-02-03)
 
 ### Fix
