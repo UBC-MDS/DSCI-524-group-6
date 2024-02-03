@@ -30,10 +30,6 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           files: ./coverage.xml   # coverage report
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4-beta
-        with:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       
       - name: Build documentation
         run: poetry run make html --directory docs/
