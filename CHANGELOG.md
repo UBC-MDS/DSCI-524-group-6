@@ -2,6 +2,19 @@
 
 
 
+## v3.2.18 (2024-02-03)
+
+### Fix
+
+* fix: Deleted new codecov action from ci-cd.yml ([`bf68872`](https://github.com/UBC-MDS/Pythoshop/commit/bf688729f1926e2d471e5020bd1192985cdf92c0))
+
+### Unknown
+
+* Merge pull request #128 from UBC-MDS/125-codecov-bug
+
+fix: Deleted new codecov action from ci-cd.yml ([`2daff89`](https://github.com/UBC-MDS/Pythoshop/commit/2daff89295af03666b8f36aaa9d390810cbd025a))
+
+
 ## v3.2.17 (2024-02-02)
 
 ### Fix
