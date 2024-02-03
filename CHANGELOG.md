@@ -2,6 +2,35 @@
 
 
 
+## v3.2.21 (2024-02-03)
+
+### Fix
+
+* fix: Fixed examples and other functions so that we don&#39;t need to save images midway, rather saving them as a list file to be displayed later. ([`734940d`](https://github.com/UBC-MDS/Pythoshop/commit/734940d275f553bb28ee52737f8fc911fa4dbdad))
+
+### Unknown
+
+* Update README.md ([`0754da7`](https://github.com/UBC-MDS/Pythoshop/commit/0754da7ea038ccf803fc9fb28eb60efc8ed3f950))
+
+* Update README.md ([`fe6f1be`](https://github.com/UBC-MDS/Pythoshop/commit/fe6f1be3a18f1d18c34b9e017042dd6f1bca68e1))
+
+* Update README.md ([`1a5498e`](https://github.com/UBC-MDS/Pythoshop/commit/1a5498ef7c23469a58fbf6ef4250467409dbec52))
+
+* Merge pull request #129 from UBC-MDS/119-fix-example-usages
+
+fix: Fixed examples and other functions so that we don&#39;t need to save… ([`2955364`](https://github.com/UBC-MDS/Pythoshop/commit/2955364d72730bc2d115475fba2af9bb1e2dcd31))
+
+* Delete codecov.yml ([`fffd833`](https://github.com/UBC-MDS/Pythoshop/commit/fffd83350c6a14289bf867b283fbee0f54c77669))
+
+* codecov secret token will be read properly now ([`2174e0c`](https://github.com/UBC-MDS/Pythoshop/commit/2174e0c62df54bf4efb8fe6c3826c7e6be13d647))
+
+* returned the yaml to original ([`39b6255`](https://github.com/UBC-MDS/Pythoshop/commit/39b6255e317da851e6bb0aafd10ef5ac8fe575e2))
+
+* Create codecov.yml ([`3c7b032`](https://github.com/UBC-MDS/Pythoshop/commit/3c7b0329923451a27617f8246710cf44ee6a2898))
+
+* trying to add the code_cove token back in ([`3374bd3`](https://github.com/UBC-MDS/Pythoshop/commit/3374bd36a9d10528d4c6e94646dfb4e41454524a))
+
+
 ## v3.2.20 (2024-02-03)
 
 ### Fix
