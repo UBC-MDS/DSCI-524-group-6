@@ -2,6 +2,13 @@
 
 
 
+## v3.2.19 (2024-02-03)
+
+### Fix
+
+* fix: edited readme usage link to docs ([`b96d521`](https://github.com/UBC-MDS/Pythoshop/commit/b96d52102e5db86c0c474e5fcd8e2a7a505c2eca))
+
+
 ## v3.2.18 (2024-02-03)
 
 ### Fix
