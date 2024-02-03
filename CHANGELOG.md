@@ -2,6 +2,13 @@
 
 
 
+## v3.2.20 (2024-02-03)
+
+### Fix
+
+* fix: peer_review updated badge to match the new GNU license ([`c293419`](https://github.com/UBC-MDS/Pythoshop/commit/c29341942b4dabea032263bea0e18463cbe807bc))
+
+
 ## v3.2.19 (2024-02-03)
 
 ### Fix
